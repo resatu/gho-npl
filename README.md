@@ -6,18 +6,19 @@
 
 @GHO NOW PAY LATER is a decentralized application leveraging GHO, the Aave Protocol's native stablecoin. Our app is engineered to facilitate seamless crypto transactions, offering innovative solutions for both merchants and users.
 
-## System architecture
+## System Architecture
 
 G-NPL
 │
 ├── Web App for Merchants
-│ └── gho-dash
+│   └── gho-dash
+│
 ├── Web App for End Users
-│ └── pay-on-the-gho
-│ └── Smart Contract for Minting
-│ └── gho-minting-facilitator
-└── Smart Contract for Vaults
-└── gho-incidence-vaults
+│   └── pay-on-the-gho
+│       ├── Smart Contract for Minting
+│       │   └── gho-minting-facilitator
+│       └── Smart Contract for Vaults
+│           └── gho-incidence-vaults
 
 ## Overview
 
