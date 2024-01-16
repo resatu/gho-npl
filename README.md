@@ -8,17 +8,15 @@
 
 ## System Architecture
 
-G-NPL
-│
-├── Web App for Merchants
-│   └── gho-dash
-│
-├── Web App for End Users
-│   └── pay-on-the-gho
-│       ├── Smart Contract for Minting
-│       │   └── gho-minting-facilitator
-│       └── Smart Contract for Vaults
-│           └── gho-incidence-vaults
+- G-NPL
+  - Web App for Merchants
+    - `gho-dash`
+  - Web App for End Users
+    - `pay-on-the-gho`
+      - Smart Contract for Minting
+        - `gho-minting-facilitator`
+      - Smart Contract for Vaults
+        - `gho-incidence-vaults`
 
 ## Overview
 
