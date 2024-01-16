@@ -1,4 +1,18 @@
-# Pay-on-the-GHO
+# G-NPL
+
+> aka GHO NOW PAY LATER
+
+## Project Description
+
+@GHO NOW PAY LATER is a decentralized application leveraging GHO, the Aave Protocol's native stablecoin. Our app is engineered to facilitate seamless crypto transactions, offering innovative solutions for both merchants and users.
+
+## Project plan
+
+-Web App for GHO NOW PAY LATER merchants -> *gho-dash*
+-Web App for GHO NOW PAY LATER end users -> *pay-on-the-gho*
+---Smart Contract for GHO NOW PAY LATER minting -> *gho-minting-facilitator*
+
+-Smart Contract for GHO NOW PAY LATER vaults -> *gho-incidence-vaults*
 
 ## Overview
 
