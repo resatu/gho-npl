@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "connectkit": "^1.6.0",
+    "connectkit-next-siwe": "^0.2.0",
     "ethers": "^6.10.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "siwe": "^2.1.4",
     "wagmi": "^1.4.13"
   },
   "devDependencies": {
