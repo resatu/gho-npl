@@ -6,13 +6,18 @@
 
 @GHO NOW PAY LATER is a decentralized application leveraging GHO, the Aave Protocol's native stablecoin. Our app is engineered to facilitate seamless crypto transactions, offering innovative solutions for both merchants and users.
 
-## Project plan
+## System architecture
 
--Web App for GHO NOW PAY LATER merchants -> *gho-dash*
--Web App for GHO NOW PAY LATER end users -> *pay-on-the-gho*
----Smart Contract for GHO NOW PAY LATER minting -> *gho-minting-facilitator*
-
--Smart Contract for GHO NOW PAY LATER vaults -> *gho-incidence-vaults*
+G-NPL
+│
+├── Web App for Merchants
+│ └── gho-dash
+├── Web App for End Users
+│ └── pay-on-the-gho
+│ └── Smart Contract for Minting
+│ └── gho-minting-facilitator
+└── Smart Contract for Vaults
+└── gho-incidence-vaults
 
 ## Overview
 
@@ -20,11 +25,13 @@ Pay-on-the-GHO is a decentralized application leveraging GHO, the Aave Protocol'
 
 ## Project Features
 
-- **GHO Minting Facilitator:** Implements a contract proposed to Aave DAO for GHO liquidity.
-- **GHO Token Integration:** Integrates GHO in versatile applications including web and mobile.
-- **Smart Contract Vaults:** Utilizes vaults for new GHO use cases and order-flow level coincidences.
-- **GHO Payment Gateway:** Enables merchants to receive USD payments from crypto users via GHO.
-- **ConnectKit Implementation:** Enhances transaction signing experiences within an iframe setup.
+| Feature                  | Description                                              |
+|--------------------------|----------------------------------------------------------|
+| GHO Minting Facilitator  | Implements a contract proposed to Aave DAO for GHO liquidity. |
+| GHO Token Integration    | Integrates GHO in versatile applications including web and mobile. |
+| Smart Contract Vaults    | Utilizes vaults for new GHO use cases and order-flow level coincidences. |
+| GHO Payment Gateway      | Enables merchants to receive USD payments from crypto users via GHO. |
+| ConnectKit Implementation| Enhances transaction signing experiences within an iframe setup. |
 
 ## Tech Stack
 
@@ -39,9 +46,9 @@ Pay-on-the-GHO is a decentralized application leveraging GHO, the Aave Protocol'
 ## Installation
 
 1. Clone the repository.
-2.Install dependencies:
+2. Install dependencies:
 
-``` shell
+```shell
 npm install
 
 ```
