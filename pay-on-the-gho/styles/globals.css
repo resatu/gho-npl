@@ -6,17 +6,18 @@
 }
 
 .HomeCard {
-  padding: 160px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 24px;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Inter;
   gap: 72px;
@@ -30,7 +31,6 @@ body {
 h1 {
   color: #FFF;
   font-size: 64px;
-  font-style: normal;
   font-weight: 900;
   line-height: 160%;
   /* 102.4px */
@@ -39,7 +39,6 @@ h1 {
 h2 {
   color: #FFF;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 160%;
 }
