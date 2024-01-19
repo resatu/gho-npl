@@ -1,4 +1,4 @@
-# G-NPL
+# GHO-NPL
 
 > aka GHO NOW PAY LATER
 
