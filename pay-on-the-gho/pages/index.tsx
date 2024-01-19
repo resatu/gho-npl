@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
 import type { NextPage } from 'next';
 import Home from '@/components/Home';
-
-
+import { ConnectWallet } from '@/components/ConnectWallet';
 
 const Mainpage: NextPage = () => {
   return (

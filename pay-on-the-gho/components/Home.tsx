@@ -10,8 +10,8 @@ interface HomeProps {
 
 
 const Home: React.FC<HomeProps> = ({ image, title, description }) => (
-    <div>
-        <Image src={image} alt={title} width={470} height={300} />
+    <div className='HomeCard'>
+        <Image src={image} alt={title} width={2 * 940 / 3} height={400} />
         <h1>{title}</h1>
         <h2>{description}</h2>
         <ConnectWallet />
