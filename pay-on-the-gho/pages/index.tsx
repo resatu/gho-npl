@@ -1,23 +1,31 @@
 import { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
-import Home from '@/components/Home';
-import { ConnectWallet } from '@/components/ConnectWallet';
+import Home from '@/components/HomeCard';
+import ConnectWallet from '@/components/ConnectWallet';
+import { useRouter } from 'next/router'; // Import useRouter
 
 const Mainpage: NextPage = () => {
   const [isLogged, setIsLogged] = useState(false);
+  const router = useRouter(); // Initialize the router
 
   useEffect(() => {
-    // Implement logic to check if user is logged in
-    // This could be checking for a token in localStorage, a state in context, etc.
-    // For example:
-    // setIsLogged(!!localStorage.getItem('userToken'));
+    const isConnected = localStorage.getItem('wagmi.connected') === 'true';
+    setIsLogged(isConnected);
 
-    // Temporary logic to simulate a logged-in user
-    setIsLogged(localStorage.getItem('wagmi.connected') === 'true')
-  }, []);
+    // Redirect to the product detail page if wagmi.connected is true
+    if (isConnected) {
+      // Replace '/product-detail' with your actual product detail page route
+      router.push('/products/a210b284-cc55-42ec-8c65-744a7206b71e');
+    }
+  }, [router]);
 
+  // Render logic remains the same
   return (
-    isLogged ? <ConnectWallet /> :
+    isLogged ?
+      <div>
+        <ConnectWallet />
+      </div>
+      :
       <div>
         <Home
           image="/home-card.png"
